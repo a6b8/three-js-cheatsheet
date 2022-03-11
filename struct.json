@@ -1,0 +1,474 @@
+{
+  "data": [
+    {
+      "name": "AStar_60000",
+      "url": "https://github.com/simondevyoutube/AStar_60000",
+      "youtube": [
+        {
+          "name": "Star Wars",
+          "url": "https://www.youtube.com/watch?v=XkvH7z4GxHM"
+        }
+      ],
+      "folder": "",
+      "category": "demos"
+    },
+    {
+      "name": "FlappyBirdClone",
+      "url": "https://github.com/simondevyoutube/FlappyBirdClone",
+      "youtube": [],
+      "folder": "",
+      "category": "demos"
+    },
+    {
+      "name": "FlappyBirdClone-NNEvolve",
+      "url": "https://github.com/simondevyoutube/FlappyBirdClone-NNEvolve",
+      "youtube": [
+        {
+          "name": "Flappy Bird",
+          "url": "https://www.youtube.com/watch?v=v06TJdhIC90"
+        }
+      ],
+      "folder": "",
+      "category": "demos"
+    },
+    {
+      "name": "FlockingSimulation_Space",
+      "url": "https://github.com/simondevyoutube/FlockingSimulation_Space",
+      "youtube": [
+        {
+          "name": "Flocking Simulation: Boids",
+          "url": "https://www.youtube.com/watch?v=LltugBg4dtk"
+        }
+      ],
+      "folder": "",
+      "category": "advanced"
+    },
+    {
+      "name": "LSystems_JavaScript",
+      "url": "https://github.com/simondevyoutube/LSystems_JavaScript",
+      "youtube": [
+        {
+          "name": "Procedural Plant Generation with L-Systems",
+          "url": "https://www.youtube.com/watch?v=feNVBEPXAcE"
+        }
+      ],
+      "folder": "",
+      "index": [ "index.html", "index-2.html", "index-3.html" ],
+      "category": "advanced"
+    },
+    {
+      "name": "MazeGeneration",
+      "url": "https://github.com/simondevyoutube/MazeGeneration",
+      "youtube": [
+        {
+          "name": "How Many AI Agents can JavaScript Handle?",
+          "url": "https://www.youtube.com/watch?v=kuy17LVDESk"
+        }
+      ],
+      "folder": "",
+      "category": "demos"
+    },
+    {
+      "name": "MinecraftClone",
+      "url": "https://github.com/simondevyoutube/MinecraftClone",
+      "youtube": [
+        {
+          "name": "Coding Minecraft in JavaScript",
+          "url": "https://www.youtube.com/watch?v=gRGtk8oF9hI"
+        }
+      ],
+      "folder": "",
+      "category": "demos"
+    },
+    {
+      "name": "ProceduralTerrain Part 01",
+      "url": "https://github.com/simondevyoutube/ProceduralTerrain_Part1",
+      "youtube": [
+        {
+          "name": "3D World Generation: Heightmap Tutorial",
+          "url": "https://www.youtube.com/watch?v=hHGshzIXFWY"
+        }
+      ],
+      "folder": "",
+      "category": "terrain"
+    },
+    {
+      "name": "ProceduralTerrain Part 10",
+      "url": "https://github.com/simondevyoutube/ProceduralTerrain_Part10",
+      "youtube": [
+        {
+          "name": "3D Mesh Generation, Gaps, and Stitching (3D World Generation #10)",
+          "url": "https://www.youtube.com/watch?v=sXFxfqGPR-c"
+        },
+        {
+          "name": "Simple Biome Generation (3D World Generation #11)",
+          "url": "https://www.youtube.com/watch?v=DPZ4eB0kT1Y"
+        },        {
+          "name": "Atmospheric Scattering (and also just faking it)",
+          "url": "https://www.youtube.com/watch?v=JMUtQcJE2Pw"
+        }
+      ],
+      "folder": "",
+      "category": "terrain"
+    },
+    {
+      "name": "ProceduralTerrain Part 02",
+      "url": "https://github.com/simondevyoutube/ProceduralTerrain_Part2",
+      "youtube": [
+        {
+          "name": "3D World Generation #2 (Perlin Noise)",
+          "url": "https://www.youtube.com/watch?v=U9q-jM3-Phc"
+        }
+      ],
+      "folder": "",
+      "index": [ "index.html", "index-2.html"],
+      "category": "terrain"
+    },
+    {
+      "name": "ProceduralTerrain Part 03",
+      "url": "https://github.com/simondevyoutube/ProceduralTerrain_Part3",
+      "youtube": [
+        {
+          "name": "3D World Generation: #3 (Quadtree & LOD)",
+          "url": "https://www.youtube.com/watch?v=YO_A5w_fxRQ"
+        }
+      ],
+      "folder": "",
+      "category": "terrain"
+    },
+    {
+      "name": "ProceduralTerrain Part 04",
+      "url": "https://github.com/simondevyoutube/ProceduralTerrain_Part4",
+      "youtube": [
+        {
+          "name": "3D World Generation: #4 (Planetary LOD): Generating Procedural Planets with Level-of-Detail!",
+          "url": "https://www.youtube.com/watch?v=HIYs7Hoq2yQ"
+        }
+      ],
+      "folder": "",
+      "category": "terrain"
+    },
+    {
+      "name": "ProceduralTerrain Part 05",
+      "url": "https://github.com/simondevyoutube/ProceduralTerrain_Part5",
+      "youtube": [
+        {
+          "name": "3D World Generation: #5 (Texturing): Triplanar Mapping/Infinite Splatting/Blending/Bombing",
+          "url": "https://www.youtube.com/watch?v=rNuDkDhadfU"
+        }
+      ],
+      "folder": "",
+      "category": "terrain"
+    },
+    {
+      "name": "ProceduralTerrain Part 06",
+      "url": "https://github.com/simondevyoutube/ProceduralTerrain_Part6",
+      "youtube": [],
+      "folder": "",
+      "category": "terrain"
+    },
+    {
+      "name": "ProceduralTerrain Part 07",
+      "url": "https://github.com/simondevyoutube/ProceduralTerrain_Part7",
+      "youtube": [
+        {
+          "name": "3D World Generation #7: Speeding it up via Threading (JavaScript Web Workers & Three.js)",
+          "url": "https://www.youtube.com/watch?v=a1L7k35EHIc"
+        }
+      ],
+      "folder": "",
+      "category": "terrain"
+    },
+    {
+      "name": "ProceduralTerrain Part 08",
+      "url": "https://github.com/simondevyoutube/ProceduralTerrain_Part8",
+      "youtube": [
+        {
+          "name": "3D World Generation #8: Floating Origins for Bigger Worlds (JavaScript/Three.js)",
+          "url": "https://www.youtube.com/watch?v=qYdcynW94vM"
+        }
+        ],
+      "folder": "",
+      "category": "terrain"
+    },
+    {
+      "name": "ProceduralTerrain Part 09",
+      "url": "https://github.com/simondevyoutube/ProceduralTerrain_Part9",
+      "youtube": [
+        {
+          "name": "Logarithmic Depth Buffers and Problems of Scale (3D World Generation #9)",
+          "url": "https://www.youtube.com/watch?v=8bRS9RRWfSs"
+        }
+      ],
+      "folder": "",
+      "category": "terrain"
+    },
+    {
+      "name": "Quick_3D_MMORPG",
+      "url": "https://github.com/simondevyoutube/Quick_3D_MMORPG",
+      "youtube": [
+        {
+          "name": "I Tried Making a 3D MMORPG Game in JavaScript",
+          "url": "https://www.youtube.com/watch?v=IptkgFOoci0"
+        }
+      ],
+      "folder": "",
+      "category": "demos"
+    },
+    {
+      "name": "Quick_3D_RPG",
+      "url": "https://github.com/simondevyoutube/Quick_3D_RPG",
+      "youtube": [
+        {
+          "name": "I Tried Making a 3D RPG Game in JavaScript",
+          "url": "https://www.youtube.com/watch?v=SBfZAVzbhCg"
+        }
+      ],
+      "folder": "",
+      "category": "demos"
+    },
+    {
+      "name": "Quick_Game1",
+      "url": "https://github.com/simondevyoutube/Quick_Game1",
+      "youtube": [
+        {
+          "name": "I Tried Making a 3D Game in JavaScript",
+          "url": "https://www.youtube.com/watch?v=0M8cxx0FQlY"
+        }
+      ],
+      "folder": "",
+      "category": "demos"
+    },
+    {
+      "name": "Quick_MinecraftClone2",
+      "url": "https://github.com/simondevyoutube/Quick_MinecraftClone2",
+      "youtube": [ 
+        {
+          "name": "I made an EVEN BETTER Minecraft",
+          "url": "https://www.youtube.com/watch?v=MQt0exToUEY"
+        }
+      ],
+      "folder": "",
+      "category": "demos"
+    },
+    {
+      "name": "RockPaperScissorsLizardSpock",
+      "url": "https://github.com/simondevyoutube/RockPaperScissorsLizardSpock",
+      "youtube": [
+        {
+          "name": "How to Code Rock Paper Scissors (JavaScript)",
+          "url": "https://www.youtube.com/watch?v=AR2BOp_mfRU"
+        }
+      ],
+      "folder": "",
+      "category": "demos"
+    },
+    {
+      "name": "ThreeJS_Tutorial_3DWebsite",
+      "url": "https://github.com/simondevyoutube/ThreeJS_Tutorial_3DWebsite",
+      "youtube": [
+        {
+          "name": "Adding a 3D Model to a Website in 5 minutes (or less)",
+          "url": "https://www.youtube.com/watch?v=M7wWKo9lNNo"
+        }
+      ],
+      "folder": "",
+      "category": "basics"
+    },
+    {
+      "name": "ThreeJS_Tutorial_BasicWorld",
+      "url": "https://github.com/simondevyoutube/ThreeJS_Tutorial_BasicWorld",
+      "youtube": [
+        {
+          "name": "World",
+          "url": "https://www.youtube.com/watch?v=PPwR7h5SnOE"
+        },
+        {
+          "name": "Cameras Introduction",
+          "url": "https://www.youtube.com/watch?v=FwcXultcBl4"
+        },
+        {
+          "name": "Shadows",
+          "url": "https://www.youtube.com/watch?v=AUF15I3sy6s"
+        },
+        {
+          "name": "Lightning Type",
+          "url": "https://www.youtube.com/watch?v=T6PhV4Hz0u4"
+        },
+        {
+          "name": "Shaders",
+          "url": "https://www.youtube.com/watch?v=C8Cuwq1eqDw"
+        }
+      ],
+      "folder": "",
+      "category": "basics"
+    },
+    {
+      "name": "ThreeJS_Tutorial_BlendModes",
+      "url": "https://github.com/simondevyoutube/ThreeJS_Tutorial_BlendModes",
+      "youtube": [
+        {
+          "name": "Blending (using WebGL/Three.js) - And How to Combine Additive and Alpha Blending",
+          "url": "https://www.youtube.com/watch?v=AxopC4yW4uY"
+        }
+      ],
+      "folder": "",
+      "category": "basics"
+    },
+    {
+      "name": "ThreeJS_Tutorial_CharacterController",
+      "url": "https://github.com/simondevyoutube/ThreeJS_Tutorial_CharacterController",
+      "youtube": [
+        {
+          "name": "Simple Character Controller (using Three.js/JavaScript)",
+          "url": "https://www.youtube.com/watch?v=EkPfhzIbp2g"
+        }
+      ],
+      "folder": "",
+      "category": "basics"
+    },
+    {
+      "name": "ThreeJS_Tutorial_Fog",
+      "url": "https://github.com/simondevyoutube/ThreeJS_Tutorial_Fog",
+      "youtube": [
+        {
+          "name": "Fog, Basic Fog, and Better Fog (Three.js Tutorial)",
+          "url": "https://www.youtube.com/watch?v=k1zGz55EqfU"
+        }
+      ],
+      "folder": "",
+      "category": "advanced"
+    },
+    {
+      "name": "ThreeJS_Tutorial_LoadingModels",
+      "url": "https://github.com/simondevyoutube/ThreeJS_Tutorial_LoadingModels",
+      "youtube": [
+        {
+          "name": "Loading Models (using Three.js) - Both Static and Animated!",
+          "url": "https://www.youtube.com/watch?v=8n_v1aJmLmc"
+        }
+      ],
+      "folder": "",
+      "category": "basics"
+    },
+    {
+      "name": "ThreeJS_Tutorial_ParticleSystems",
+      "url": "https://github.com/simondevyoutube/ThreeJS_Tutorial_ParticleSystems",
+      "youtube": [
+        {
+          "name": "Fluffy, Soft Particles (WebGL/Three.js)",
+          "url": "https://www.youtube.com/watch?v=arn_3WzCJQ8"
+        },
+        {
+          "name": "Writing a Particle System (using Three.js)",
+          "url": "https://www.youtube.com/watch?v=OFqENgtqRAY"
+        }
+      ],
+      "folder": "",
+      "category": "advanced"
+    },
+    {
+      "name": "ThreeJS_Tutorial_PostProcessing",
+      "url": "https://github.com/simondevyoutube/ThreeJS_Tutorial_PostProcessing",
+      "youtube": [
+        {
+          "name": "Three.js Post Processing Tutorial | Easy & Quick for Beginners (JavaScript)",
+          "url": "https://www.youtube.com/watch?v=_da8WNeZZ4w"
+        }
+      ],
+      "folder": "",
+      "category": "advanced"
+    },
+    {
+      "name": "ThreeJS_Tutorial_ThirdPersonCamera",
+      "url": "https://github.com/simondevyoutube/ThreeJS_Tutorial_ThirdPersonCamera",
+      "youtube": [
+        {
+          "name": "Third Person Camera",
+          "url": "https://www.youtube.com/watch?v=UuNPHOJ_V5o"
+        }
+      ],
+      "folder": "",
+      "category": "basics"
+    },
+    {
+      "name": "TicTacToe_WithMinimax",
+      "url": "https://github.com/simondevyoutube/TicTacToe_WithMinimax",
+      "youtube": [
+        {
+          "name": "Tic Tac Toe with Minimax Algorithm",
+          "url": "https://www.youtube.com/watch?v=4KyYjERkmPg"
+        }
+      ],
+      "folder": "",
+      "category": "demos"
+    },
+    {
+      "name": "Tutorial_ChromeDinosaurGame3D",
+      "url": "https://github.com/simondevyoutube/Tutorial_ChromeDinosaurGame3D",
+      "youtube": [
+        {
+          "name": "Needlessly 3D Chrome Dinosaur Game (JavaScript/Three.js)",
+          "url": "https://www.youtube.com/watch?v=KJ38qCwFdy8"
+        }
+      ],
+      "folder": "",
+      "category": "demos"
+    },
+    {
+      "name": "Tutorial_SpatialHashGrid",
+      "url": "https://github.com/simondevyoutube/Tutorial_SpatialHashGrid",
+      "youtube": [ 
+        {
+          "name": "Spatial Hash Grids & Tales from Game Development",
+          "url": "https://www.youtube.com/watch?v=sx4IIQL0x7c"
+        }
+      ],
+      "folder": "",
+      "category": "advanced"
+    },
+    {
+      "name": "Tutorial_SpatialHashGrid_Optimized",
+      "url": "https://github.com/simondevyoutube/Tutorial_SpatialHashGrid_Optimized",
+      "youtube": [],
+      "folder": "",
+      "category": "advanced"
+    },
+    {
+      "name": "WebGL_1Day_3DEngine",
+      "url": "https://github.com/simondevyoutube/WebGL_1Day_3DEngine",
+      "youtube": [
+        {
+          "name": "I Made a 3D Engine in 1 Day (WebGL/JavaScript)",
+          "url": "https://www.youtube.com/watch?v=Ms1vvo45Wi8"
+        }
+      ],
+      "folder": "",
+      "category": "demos"
+    },
+    {
+      "name": "ThreeJS_Tutorial_FirstPersonCamera",
+      "url": "https://github.com/simondevyoutube/ThreeJS_Tutorial_FirstPersonCamera",
+      "youtube": [
+        {
+          "name": "Building a Simple First Person Camera",
+          "url": "https://www.youtube.com/watch?v=oqKzxPMLWxo"
+        }
+      ],
+      "folder": "",
+      "category": "demos"
+    },
+    {
+      "name": "ThreeJS_Tutorial_3DSound",
+      "url": "https://github.com/simondevyoutube/ThreeJS_Tutorial_3DSound",
+      "youtube": [
+        {
+          "name": "Immersive 3D Audio and Visualization (three.js & javascript)",
+          "url": "https://www.youtube.com/watch?v=1S7ke6F8sV4"
+        }
+      ],
+      "folder": "",
+      "category": "demos"
+    }
+  ]
+}

@@ -1,0 +1,755 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+    
+	<style>
+	html,body{color:black}*{margin:0;padding:0}body{font:13.34px helvetica,arial,freesans,clean,sans-serif;-webkit-font-smoothing:subpixel-antialiased;line-height:1.4;padding:3px;background:#fff;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px}p{margin:1em 0}a{color:#4183c4;text-decoration:none}#wrapper{background-color:#fff;padding:30px;font-size:14px;line-height:1.6;width:900px;margin:15px auto;}@media screen{#wrapper{box-shadow:0 0 0 1px #cacaca,0 0 0 4px #eee}}#wrapper>*:first-child{margin-top:0!important}#wrapper>*:last-child{margin-bottom:0!important}h1,h2,h3,h4,h5,h6{margin:20px 0 10px;padding:0;font-weight:bold;-webkit-font-smoothing:subpixel-antialiased;cursor:text}h1{font-size:28px;color:#000}h2{font-size:24px;border-bottom:1px solid #ccc;color:#000}h3{font-size:18px;color:#333}h4{font-size:16px;color:#333}h5{font-size:14px;color:#333}h6{color:#777;font-size:14px}p,blockquote,ul,ol,dl,table,pre{margin:15px 0}ul,ol{padding-left:30px}hr{background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;border:0 none;color:#ccc;height:4px;padding:0}#wrapper>h2:first-child,#wrapper>h1:first-child,#wrapper>h1:first-child+h2,#wrapper>h3:first-child,#wrapper>h4:first-child,#wrapper>h5:first-child,#wrapper>h6:first-child{margin-top:0;padding-top:0}a:first-child h1,a:first-child h2,a:first-child h3,a:first-child h4,a:first-child h5,a:first-child h6{margin-top:0;padding-top:0}h1+p,h2+p,h3+p,h4+p,h5+p,h6+p{margin-top:0}ul li>:first-child,ol li>:first-child{margin-top:0}dl{padding:0}dl dt{font-size:14px;font-weight:bold;font-style:italic;padding:0;margin:15px 0 5px}dl dt:first-child{padding:0}dl dt>:first-child{margin-top:0}dl dt>:last-child{margin-bottom:0}dl dd{margin:0 0 15px;padding:0 15px}dl dd>:first-child{margin-top:0}dl dd>:last-child{margin-bottom:0}blockquote{border-left:4px solid #DDD;padding:0 15px;color:#777}blockquote>:first-child{margin-top:0}blockquote>:last-child{margin-bottom:0}table{border-collapse:collapse;border-spacing:0;font-size:100%;font:inherit}table th{font-weight:bold}table th,table td{border:1px solid #ccc;padding:6px 13px}table tr{border-top:1px solid #ccc;background-color:#fff}table tr:nth-child(2n){background-color:#f8f8f8}img{max-width:100%}code,tt{margin:0 2px;padding:0 5px;white-space:nowrap;border:1px solid #eaeaea;background-color:#f8f8f8;border-radius:3px}pre>code{margin:0;padding:0;white-space:pre;border:0;background:transparent}.highlight pre,pre{background-color:#f8f8f8;border:1px solid #ccc;font-size:13px;line-height:19px;overflow:auto;padding:6px 10px;border-radius:3px}pre code,pre tt{background-color:transparent;border:0}.poetry pre{font-family:Georgia,Garamond,serif!important;font-style:italic;font-size:110%!important;line-height:1.6em;display:block;margin-left:1em}.poetry pre code{font-family:Georgia,Garamond,serif!important;word-break:break-all;word-break:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;white-space:pre-wrap}sup,sub,a.footnote{font-size:1.4ex;height:0;line-height:1;vertical-align:super;position:relative}sub{vertical-align:sub;top:-1px}@media print{body{background:#fff}img,pre,blockquote,table,figure{page-break-inside:avoid}#wrapper{background:#fff;border:0}code{background-color:#fff;color:#444!important;padding:0 .2em;border:1px solid #dedede}pre code{background-color:#fff!important;overflow:visible}pre{background:#fff}}@media screen{body.inverted,.inverted #wrapper,.inverted hr .inverted p,.inverted td,.inverted li,.inverted h1,.inverted h2,.inverted h3,.inverted h4,.inverted h5,.inverted h6,.inverted th,.inverted .math,.inverted caption,.inverted dd,.inverted dt,.inverted blockquote{color:#eee!important;border-color:#555}.inverted td,.inverted th{background:#333}.inverted pre,.inverted code,.inverted tt{background:#444!important}.inverted h2{border-color:#555}.inverted hr{border-color:#777;border-width:1px!important}::selection{background:rgba(157,193,200,.5)}h1::selection{background-color:rgba(45,156,208,.3)}h2::selection{background-color:rgba(90,182,224,.3)}h3::selection,h4::selection,h5::selection,h6::selection,li::selection,ol::selection{background-color:rgba(133,201,232,.3)}code::selection{background-color:rgba(0,0,0,.7);color:#eee}code span::selection{background-color:rgba(0,0,0,.7)!important;color:#eee!important}a::selection{background-color:rgba(255,230,102,.2)}.inverted a::selection{background-color:rgba(255,230,102,.6)}td::selection,th::selection,caption::selection{background-color:rgba(180,237,95,.5)}.inverted{background:#0b2531}.inverted #wrapper,.inverted{background:rgba(37,42,42,1)}.inverted a{color:rgba(172,209,213,1)}}.highlight .c{color:#998;font-style:italic}.highlight .err{color:#a61717;background-color:#e3d2d2}.highlight .k{font-weight:bold}.highlight .o{font-weight:bold}.highlight .cm{color:#998;font-style:italic}.highlight .cp{color:#999;font-weight:bold}.highlight .c1{color:#998;font-style:italic}.highlight .cs{color:#999;font-weight:bold;font-style:italic}.highlight .gd{color:#000;background-color:#fdd}.highlight .gd .x{color:#000;background-color:#faa}.highlight .ge{font-style:italic}.highlight .gr{color:#a00}.highlight .gh{color:#999}.highlight .gi{color:#000;background-color:#dfd}.highlight .gi .x{color:#000;background-color:#afa}.highlight .go{color:#888}.highlight .gp{color:#555}.highlight .gs{font-weight:bold}.highlight .gu{color:#800080;font-weight:bold}.highlight .gt{color:#a00}.highlight .kc{font-weight:bold}.highlight .kd{font-weight:bold}.highlight .kn{font-weight:bold}.highlight .kp{font-weight:bold}.highlight .kr{font-weight:bold}.highlight .kt{color:#458;font-weight:bold}.highlight .m{color:#099}.highlight .s{color:#d14}.highlight .na{color:#008080}.highlight .nb{color:#0086b3}.highlight .nc{color:#458;font-weight:bold}.highlight .no{color:#008080}.highlight .ni{color:#800080}.highlight .ne{color:#900;font-weight:bold}.highlight .nf{color:#900;font-weight:bold}.highlight .nn{color:#555}.highlight .nt{color:#000080}.highlight .nv{color:#008080}.highlight .ow{font-weight:bold}.highlight .w{color:#bbb}.highlight .mf{color:#099}.highlight .mh{color:#099}.highlight .mi{color:#099}.highlight .mo{color:#099}.highlight .sb{color:#d14}.highlight .sc{color:#d14}.highlight .sd{color:#d14}.highlight .s2{color:#d14}.highlight .se{color:#d14}.highlight .sh{color:#d14}.highlight .si{color:#d14}.highlight .sx{color:#d14}.highlight .sr{color:#009926}.highlight .s1{color:#d14}.highlight .ss{color:#990073}.highlight .bp{color:#999}.highlight .vc{color:#008080}.highlight .vg{color:#008080}.highlight .vi{color:#008080}.highlight .il{color:#099}.highlight .gc{color:#999;background-color:#eaf2f5}.type-csharp .highlight .k{color:#00F}.type-csharp .highlight .kt{color:#00F}.type-csharp .highlight .nf{color:#000;font-weight:normal}.type-csharp .highlight .nc{color:#2b91af}.type-csharp .highlight .nn{color:#000}.type-csharp .highlight .s{color:#a31515}.type-csharp .highlight .sc{color:#a31515}
+	</style>
+</head>
+<body>
+<div id="wrapper">
+<h1>Three.js - Cheatsheet</h1>
+<details><summary><g-emoji class="g-emoji" alias="beginner" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f530.png">🔰</g-emoji> Basics</summary>
+<h3>A. ThreeJS_Tutorial_3DWebsite</h3>
+<p><strong>Demo</strong>: <a href="./ThreeJS_Tutorial_3DWebsite">index.html</a><br>
+<strong>Source Code</strong>: <a href="https://github.com/simondevyoutube/ThreeJS_Tutorial_3DWebsite">Github</a></p>
+<table role="table">
+<thead>
+<tr>
+<th align="left">Nr</th>
+<th align="left">Preview</th>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=M7wWKo9lNNo" rel="nofollow"><img src="https://camo.githubusercontent.com/c62140e3fa57fa1828a51425f564aed65eaf0e7304b2c8793508a77f8e86098f/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f4d3777574b6f396c4e4e6f2f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/M7wWKo9lNNo/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=M7wWKo9lNNo" rel="nofollow">Adding a 3D Model to a Website in 5 minutes (or less)</a></td>
+</tr>
+</tbody>
+</table>
+<h3>B. ThreeJS_Tutorial_BasicWorld</h3>
+<p><strong>Demo</strong>: <a href="./ThreeJS_Tutorial_BasicWorld">index.html</a><br>
+<strong>Source Code</strong>: <a href="https://github.com/simondevyoutube/ThreeJS_Tutorial_BasicWorld">Github</a></p>
+<table role="table">
+<thead>
+<tr>
+<th align="left">Nr</th>
+<th align="left">Preview</th>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=PPwR7h5SnOE" rel="nofollow"><img src="https://camo.githubusercontent.com/106705a84a4d93a0389005671950abe689b76736712537fef1d7abcbfe2f0707/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f50507752376835536e4f452f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/PPwR7h5SnOE/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=PPwR7h5SnOE" rel="nofollow">World</a></td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=FwcXultcBl4" rel="nofollow"><img src="https://camo.githubusercontent.com/a100a8e1f10d2894ff9419fb557fc8e9b0e2efbb89446516aa704882ceae3f08/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f46776358756c7463426c342f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/FwcXultcBl4/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=FwcXultcBl4" rel="nofollow">Cameras Introduction</a></td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=AUF15I3sy6s" rel="nofollow"><img src="https://camo.githubusercontent.com/c60df5bda985c5722a21648ce1ceb32e8f912c05837f5ff46d81377e536a8a83/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f41554631354933737936732f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/AUF15I3sy6s/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=AUF15I3sy6s" rel="nofollow">Shadows</a></td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=T6PhV4Hz0u4" rel="nofollow"><img src="https://camo.githubusercontent.com/8b9174d1c9b6ab82b0d58b1804d13502d474da81d2bb3a7c7bc68e8b1f029a7a/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f543650685634487a3075342f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/T6PhV4Hz0u4/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=T6PhV4Hz0u4" rel="nofollow">Lightning Type</a></td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=C8Cuwq1eqDw" rel="nofollow"><img src="https://camo.githubusercontent.com/ea0dc99af0a33b2ae326b94bbda637e1f0f24337ee3ff370458ede047de23088/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f43384375777131657144772f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/C8Cuwq1eqDw/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=C8Cuwq1eqDw" rel="nofollow">Shaders</a></td>
+</tr>
+</tbody>
+</table>
+<h3>C. ThreeJS_Tutorial_BlendModes</h3>
+<p><strong>Demo</strong>: <a href="./ThreeJS_Tutorial_BlendModes">index.html</a><br>
+<strong>Source Code</strong>: <a href="https://github.com/simondevyoutube/ThreeJS_Tutorial_BlendModes">Github</a></p>
+<table role="table">
+<thead>
+<tr>
+<th align="left">Nr</th>
+<th align="left">Preview</th>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=AxopC4yW4uY" rel="nofollow"><img src="https://camo.githubusercontent.com/810f198e17e0ca8c63f77955d5c840aa4d7a11a3e166da7c50a7e585687db97f/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f41786f70433479573475592f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/AxopC4yW4uY/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=AxopC4yW4uY" rel="nofollow">Blending (using WebGL/Three.js) - And How to Combine Additive and Alpha Blending</a></td>
+</tr>
+</tbody>
+</table>
+<h3>D. ThreeJS_Tutorial_CharacterController</h3>
+<p><strong>Demo</strong>: <a href="./ThreeJS_Tutorial_CharacterController">index.html</a><br>
+<strong>Source Code</strong>: <a href="https://github.com/simondevyoutube/ThreeJS_Tutorial_CharacterController">Github</a></p>
+<table role="table">
+<thead>
+<tr>
+<th align="left">Nr</th>
+<th align="left">Preview</th>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=EkPfhzIbp2g" rel="nofollow"><img src="https://camo.githubusercontent.com/4a472b9b0f2ce2027c98de3fb725bb6b7492af790a559d96f45a3c58aa1b70bb/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f456b5066687a49627032672f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/EkPfhzIbp2g/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=EkPfhzIbp2g" rel="nofollow">Simple Character Controller (using Three.js/JavaScript)</a></td>
+</tr>
+</tbody>
+</table>
+<h3>E. ThreeJS_Tutorial_LoadingModels</h3>
+<p><strong>Demo</strong>: <a href="./ThreeJS_Tutorial_LoadingModels">index.html</a><br>
+<strong>Source Code</strong>: <a href="https://github.com/simondevyoutube/ThreeJS_Tutorial_LoadingModels">Github</a></p>
+<table role="table">
+<thead>
+<tr>
+<th align="left">Nr</th>
+<th align="left">Preview</th>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=8n_v1aJmLmc" rel="nofollow"><img src="https://camo.githubusercontent.com/865707dba98d4395d2b46fe49dd7eaf5ed062736b512793d15a674cd1bac95ef/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f386e5f7631614a6d4c6d632f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/8n_v1aJmLmc/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=8n_v1aJmLmc" rel="nofollow">Loading Models (using Three.js) - Both Static and Animated!</a></td>
+</tr>
+</tbody>
+</table>
+<h3>F. ThreeJS_Tutorial_ThirdPersonCamera</h3>
+<p><strong>Demo</strong>: <a href="./ThreeJS_Tutorial_ThirdPersonCamera">index.html</a><br>
+<strong>Source Code</strong>: <a href="https://github.com/simondevyoutube/ThreeJS_Tutorial_ThirdPersonCamera">Github</a></p>
+<table role="table">
+<thead>
+<tr>
+<th align="left">Nr</th>
+<th align="left">Preview</th>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=UuNPHOJ_V5o" rel="nofollow"><img src="https://camo.githubusercontent.com/0342642920d4485339b8c5607938523d4e4fb3893eede6e2b32e562f56eed80b/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f55754e50484f4a5f56356f2f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/UuNPHOJ_V5o/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=UuNPHOJ_V5o" rel="nofollow">Third Person Camera</a></td>
+</tr>
+</tbody>
+</table>
+</details>
+<details><summary><g-emoji class="g-emoji" alias="cat2" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f408.png">🐈</g-emoji> Advanced</summary>
+<h3>A. FlockingSimulation_Space</h3>
+<p><strong>Demo</strong>: <a href="./FlockingSimulation_Space">index.html</a><br>
+<strong>Source Code</strong>: <a href="https://github.com/simondevyoutube/FlockingSimulation_Space">Github</a></p>
+<table role="table">
+<thead>
+<tr>
+<th align="left">Nr</th>
+<th align="left">Preview</th>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=LltugBg4dtk" rel="nofollow"><img src="https://camo.githubusercontent.com/0dc2dca6b767c04ea95ed13f4fa58ad3a8a640c4c6e84599b3c05a62c34f600b/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f4c6c74756742673464746b2f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/LltugBg4dtk/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=LltugBg4dtk" rel="nofollow">Flocking Simulation: Boids</a></td>
+</tr>
+</tbody>
+</table>
+<h3>B. LSystems_JavaScript</h3>
+<p><strong>Demo</strong>: <a href="./LSystems_JavaScript/index.html">index.html</a>, <a href="./LSystems_JavaScript/index-2.html">index-2.html</a>, <a href="./LSystems_JavaScript/index-3.html">index-3.html</a><br>
+<strong>Source Code</strong>: <a href="https://github.com/simondevyoutube/LSystems_JavaScript">Github</a></p>
+<table role="table">
+<thead>
+<tr>
+<th align="left">Nr</th>
+<th align="left">Preview</th>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=feNVBEPXAcE" rel="nofollow"><img src="https://camo.githubusercontent.com/5a577bf52089b0a0c1886c05cedf56ccd52d77593d07c53b2dab866905edd833/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f66654e56424550584163452f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/feNVBEPXAcE/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=feNVBEPXAcE" rel="nofollow">Procedural Plant Generation with L-Systems</a></td>
+</tr>
+</tbody>
+</table>
+<h3>C. ThreeJS_Tutorial_Fog</h3>
+<p><strong>Demo</strong>: <a href="./ThreeJS_Tutorial_Fog">index.html</a><br>
+<strong>Source Code</strong>: <a href="https://github.com/simondevyoutube/ThreeJS_Tutorial_Fog">Github</a></p>
+<table role="table">
+<thead>
+<tr>
+<th align="left">Nr</th>
+<th align="left">Preview</th>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=k1zGz55EqfU" rel="nofollow"><img src="https://camo.githubusercontent.com/4fef400e02e01c6c91f475eea2dcaaa5f42d2115afc67214bc55fbf6340fce39/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f6b317a477a3535457166552f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/k1zGz55EqfU/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=k1zGz55EqfU" rel="nofollow">Fog, Basic Fog, and Better Fog (Three.js Tutorial)</a></td>
+</tr>
+</tbody>
+</table>
+<h3>D. ThreeJS_Tutorial_ParticleSystems</h3>
+<p><strong>Demo</strong>: <a href="./ThreeJS_Tutorial_ParticleSystems">index.html</a><br>
+<strong>Source Code</strong>: <a href="https://github.com/simondevyoutube/ThreeJS_Tutorial_ParticleSystems">Github</a></p>
+<table role="table">
+<thead>
+<tr>
+<th align="left">Nr</th>
+<th align="left">Preview</th>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=arn_3WzCJQ8" rel="nofollow"><img src="https://camo.githubusercontent.com/7e765826611a0e22942ae8f0d41220de3215473cd3670ef78c7f7f5cdd375b79/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f61726e5f33577a434a51382f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/arn_3WzCJQ8/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=arn_3WzCJQ8" rel="nofollow">Fluffy, Soft Particles (WebGL/Three.js)</a></td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=OFqENgtqRAY" rel="nofollow"><img src="https://camo.githubusercontent.com/1afdec5f15f799f6dc0e810acc4cd74cac95c4f80f92bba94e9374dd745f177d/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f4f4671454e6774715241592f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/OFqENgtqRAY/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=OFqENgtqRAY" rel="nofollow">Writing a Particle System (using Three.js)</a></td>
+</tr>
+</tbody>
+</table>
+<h3>E. ThreeJS_Tutorial_PostProcessing</h3>
+<p><strong>Demo</strong>: <a href="./ThreeJS_Tutorial_PostProcessing">index.html</a><br>
+<strong>Source Code</strong>: <a href="https://github.com/simondevyoutube/ThreeJS_Tutorial_PostProcessing">Github</a></p>
+<table role="table">
+<thead>
+<tr>
+<th align="left">Nr</th>
+<th align="left">Preview</th>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=_da8WNeZZ4w" rel="nofollow"><img src="https://camo.githubusercontent.com/91db694eb999ee3454870e73dc65e6455a3e78c6fb34aeed8205d3086bca1f1f/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f5f646138574e655a5a34772f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/_da8WNeZZ4w/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left">[Three.js Post Processing Tutorial</td>
+</tr>
+</tbody>
+</table>
+<h3>F. Tutorial_SpatialHashGrid</h3>
+<p><strong>Demo</strong>: <a href="./Tutorial_SpatialHashGrid">index.html</a><br>
+<strong>Source Code</strong>: <a href="https://github.com/simondevyoutube/Tutorial_SpatialHashGrid">Github</a></p>
+<table role="table">
+<thead>
+<tr>
+<th align="left">Nr</th>
+<th align="left">Preview</th>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=sx4IIQL0x7c" rel="nofollow"><img src="https://camo.githubusercontent.com/df806a7937d03e14e5086b4bbaf965a002db0d8166b64f325e42624ba56ebaf3/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f7378344949514c307837632f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/sx4IIQL0x7c/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=sx4IIQL0x7c" rel="nofollow">Spatial Hash Grids &amp; Tales from Game Development</a></td>
+</tr>
+</tbody>
+</table>
+<h3>G. Tutorial_SpatialHashGrid_Optimized</h3>
+<p><strong>Demo</strong>: <a href="./Tutorial_SpatialHashGrid_Optimized">index.html</a><br>
+<strong>Source Code</strong>: <a href="https://github.com/simondevyoutube/Tutorial_SpatialHashGrid_Optimized">Github</a></p>
+</details>
+<details><summary><g-emoji class="g-emoji" alias="mountain" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/26f0.png">⛰️</g-emoji> Terrain</summary>
+<h3>A. ProceduralTerrain Part 01</h3>
+<p><strong>Demo</strong>: <a href="./ProceduralTerrain_Part1">index.html</a><br>
+<strong>Source Code</strong>: <a href="https://github.com/simondevyoutube/ProceduralTerrain_Part1">Github</a></p>
+<table role="table">
+<thead>
+<tr>
+<th align="left">Nr</th>
+<th align="left">Preview</th>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=hHGshzIXFWY" rel="nofollow"><img src="https://camo.githubusercontent.com/36ab9273dc5b9ee65678e84694341616c8249a92ef36d3fca46bbb634b725f15/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f68484773687a49584657592f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/hHGshzIXFWY/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=hHGshzIXFWY" rel="nofollow">3D World Generation: Heightmap Tutorial</a></td>
+</tr>
+</tbody>
+</table>
+<h3>B. ProceduralTerrain Part 02</h3>
+<p><strong>Demo</strong>: <a href="./ProceduralTerrain_Part2/index.html">index.html</a>, <a href="./ProceduralTerrain_Part2/index-2.html">index-2.html</a><br>
+<strong>Source Code</strong>: <a href="https://github.com/simondevyoutube/ProceduralTerrain_Part2">Github</a></p>
+<table role="table">
+<thead>
+<tr>
+<th align="left">Nr</th>
+<th align="left">Preview</th>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=U9q-jM3-Phc" rel="nofollow"><img src="https://camo.githubusercontent.com/b591e0deda0275e1f04af70d5ccedd1d8961ab8aa934be3e09367f8b5ae7151c/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f5539712d6a4d332d5068632f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/U9q-jM3-Phc/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=U9q-jM3-Phc" rel="nofollow">3D World Generation #2 (Perlin Noise)</a></td>
+</tr>
+</tbody>
+</table>
+<h3>C. ProceduralTerrain Part 03</h3>
+<p><strong>Demo</strong>: <a href="./ProceduralTerrain_Part3">index.html</a><br>
+<strong>Source Code</strong>: <a href="https://github.com/simondevyoutube/ProceduralTerrain_Part3">Github</a></p>
+<table role="table">
+<thead>
+<tr>
+<th align="left">Nr</th>
+<th align="left">Preview</th>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=YO_A5w_fxRQ" rel="nofollow"><img src="https://camo.githubusercontent.com/9eb5042ad0cd3e6e3221f903902720e4834a54909e3bac5d021529d149f2103c/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f594f5f4135775f667852512f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/YO_A5w_fxRQ/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=YO_A5w_fxRQ" rel="nofollow">3D World Generation: #3 (Quadtree &amp; LOD)</a></td>
+</tr>
+</tbody>
+</table>
+<h3>D. ProceduralTerrain Part 04</h3>
+<p><strong>Demo</strong>: <a href="./ProceduralTerrain_Part4">index.html</a><br>
+<strong>Source Code</strong>: <a href="https://github.com/simondevyoutube/ProceduralTerrain_Part4">Github</a></p>
+<table role="table">
+<thead>
+<tr>
+<th align="left">Nr</th>
+<th align="left">Preview</th>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=HIYs7Hoq2yQ" rel="nofollow"><img src="https://camo.githubusercontent.com/fcedb7b9b4f425e1e84a06c4361e094f3a63bd33651f6161707694c24d1ea75c/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f4849597337486f713279512f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/HIYs7Hoq2yQ/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=HIYs7Hoq2yQ" rel="nofollow">3D World Generation: #4 (Planetary LOD): Generating Procedural Planets with Level-of-Detail!</a></td>
+</tr>
+</tbody>
+</table>
+<h3>E. ProceduralTerrain Part 05</h3>
+<p><strong>Demo</strong>: <a href="./ProceduralTerrain_Part5">index.html</a><br>
+<strong>Source Code</strong>: <a href="https://github.com/simondevyoutube/ProceduralTerrain_Part5">Github</a></p>
+<table role="table">
+<thead>
+<tr>
+<th align="left">Nr</th>
+<th align="left">Preview</th>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=rNuDkDhadfU" rel="nofollow"><img src="https://camo.githubusercontent.com/a0e985a23113e6020ff6122762bcc20ec861de7335f259c03f9d9590b710f866/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f724e75446b4468616466552f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/rNuDkDhadfU/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=rNuDkDhadfU" rel="nofollow">3D World Generation: #5 (Texturing): Triplanar Mapping/Infinite Splatting/Blending/Bombing</a></td>
+</tr>
+</tbody>
+</table>
+<h3>F. ProceduralTerrain Part 06</h3>
+<p><strong>Demo</strong>: <a href="./ProceduralTerrain_Part6">index.html</a><br>
+<strong>Source Code</strong>: <a href="https://github.com/simondevyoutube/ProceduralTerrain_Part6">Github</a></p>
+<h3>G. ProceduralTerrain Part 07</h3>
+<p><strong>Demo</strong>: <a href="./ProceduralTerrain_Part7">index.html</a><br>
+<strong>Source Code</strong>: <a href="https://github.com/simondevyoutube/ProceduralTerrain_Part7">Github</a></p>
+<table role="table">
+<thead>
+<tr>
+<th align="left">Nr</th>
+<th align="left">Preview</th>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=a1L7k35EHIc" rel="nofollow"><img src="https://camo.githubusercontent.com/26fc6fb5f1e87f7bd2e6c9008f814ce43195fb74b15ba9ee34ebfb0a4915f17a/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f61314c376b3335454849632f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/a1L7k35EHIc/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=a1L7k35EHIc" rel="nofollow">3D World Generation #7: Speeding it up via Threading (JavaScript Web Workers &amp; Three.js)</a></td>
+</tr>
+</tbody>
+</table>
+<h3>H. ProceduralTerrain Part 08</h3>
+<p><strong>Demo</strong>: <a href="./ProceduralTerrain_Part8">index.html</a><br>
+<strong>Source Code</strong>: <a href="https://github.com/simondevyoutube/ProceduralTerrain_Part8">Github</a></p>
+<table role="table">
+<thead>
+<tr>
+<th align="left">Nr</th>
+<th align="left">Preview</th>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=qYdcynW94vM" rel="nofollow"><img src="https://camo.githubusercontent.com/9937f1c2f7f2a93b716b8ff8e6b61f7677823b71b10efed2ee887092e6ea8435/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f71596463796e573934764d2f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/qYdcynW94vM/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=qYdcynW94vM" rel="nofollow">3D World Generation #8: Floating Origins for Bigger Worlds (JavaScript/Three.js)</a></td>
+</tr>
+</tbody>
+</table>
+<h3>I. ProceduralTerrain Part 09</h3>
+<p><strong>Demo</strong>: <a href="./ProceduralTerrain_Part9">index.html</a><br>
+<strong>Source Code</strong>: <a href="https://github.com/simondevyoutube/ProceduralTerrain_Part9">Github</a></p>
+<table role="table">
+<thead>
+<tr>
+<th align="left">Nr</th>
+<th align="left">Preview</th>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=8bRS9RRWfSs" rel="nofollow"><img src="https://camo.githubusercontent.com/252371138bbcb58b641df074f1183f53fe7c3ea96304d59ec5132bab20d35d28/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f38625253395252576653732f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/8bRS9RRWfSs/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=8bRS9RRWfSs" rel="nofollow">Logarithmic Depth Buffers and Problems of Scale (3D World Generation #9)</a></td>
+</tr>
+</tbody>
+</table>
+<h3>J. ProceduralTerrain Part 10</h3>
+<p><strong>Demo</strong>: <a href="./ProceduralTerrain_Part10">index.html</a><br>
+<strong>Source Code</strong>: <a href="https://github.com/simondevyoutube/ProceduralTerrain_Part10">Github</a></p>
+<table role="table">
+<thead>
+<tr>
+<th align="left">Nr</th>
+<th align="left">Preview</th>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=sXFxfqGPR-c" rel="nofollow"><img src="https://camo.githubusercontent.com/f3591c38374870efc6e6116ab7ea147d412a8b633744738e7611bc11be50d2b1/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f7358467866714750522d632f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/sXFxfqGPR-c/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=sXFxfqGPR-c" rel="nofollow">3D Mesh Generation, Gaps, and Stitching (3D World Generation #10)</a></td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=DPZ4eB0kT1Y" rel="nofollow"><img src="https://camo.githubusercontent.com/a73f68ab0a2dae752a721f41eb245aa1fce4cd823df534c695e77f8234d86bc3/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f44505a346542306b5431592f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/DPZ4eB0kT1Y/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=DPZ4eB0kT1Y" rel="nofollow">Simple Biome Generation (3D World Generation #11)</a></td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=JMUtQcJE2Pw" rel="nofollow"><img src="https://camo.githubusercontent.com/1ccf5bfe2b54c848e7bedd651a30a073fe0a1a2f3dcd2660249cc5f382feb866/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f4a4d557451634a453250772f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/JMUtQcJE2Pw/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=JMUtQcJE2Pw" rel="nofollow">Atmospheric Scattering (and also just faking it)</a></td>
+</tr>
+</tbody>
+</table>
+</details>
+<details><summary><g-emoji class="g-emoji" alias="joystick" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f579.png">🕹️</g-emoji> Demos</summary>
+<h3>A. AStar_60000</h3>
+<p><strong>Demo</strong>: <a href="./AStar_60000">index.html</a><br>
+<strong>Source Code</strong>: <a href="https://github.com/simondevyoutube/AStar_60000">Github</a></p>
+<table role="table">
+<thead>
+<tr>
+<th align="left">Nr</th>
+<th align="left">Preview</th>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=XkvH7z4GxHM" rel="nofollow"><img src="https://camo.githubusercontent.com/e11c053e6c57de4f381a8398afb3aeedb7f683156618733ccefb9817aae9490e/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f586b7648377a344778484d2f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/XkvH7z4GxHM/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=XkvH7z4GxHM" rel="nofollow">Star Wars</a></td>
+</tr>
+</tbody>
+</table>
+<h3>B. FlappyBirdClone</h3>
+<p><strong>Demo</strong>: <a href="./FlappyBirdClone">index.html</a><br>
+<strong>Source Code</strong>: <a href="https://github.com/simondevyoutube/FlappyBirdClone">Github</a></p>
+<h3>C. FlappyBirdClone-NNEvolve</h3>
+<p><strong>Demo</strong>: <a href="./FlappyBirdClone-NNEvolve">index.html</a><br>
+<strong>Source Code</strong>: <a href="https://github.com/simondevyoutube/FlappyBirdClone-NNEvolve">Github</a></p>
+<table role="table">
+<thead>
+<tr>
+<th align="left">Nr</th>
+<th align="left">Preview</th>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=v06TJdhIC90" rel="nofollow"><img src="https://camo.githubusercontent.com/87316a288a2fa95c56c6ee45e327bd9f85cee24571a1b69dd9fe63213e8956af/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f763036544a6468494339302f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/v06TJdhIC90/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=v06TJdhIC90" rel="nofollow">Flappy Bird</a></td>
+</tr>
+</tbody>
+</table>
+<h3>D. MazeGeneration</h3>
+<p><strong>Demo</strong>: <a href="./MazeGeneration">index.html</a><br>
+<strong>Source Code</strong>: <a href="https://github.com/simondevyoutube/MazeGeneration">Github</a></p>
+<table role="table">
+<thead>
+<tr>
+<th align="left">Nr</th>
+<th align="left">Preview</th>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=kuy17LVDESk" rel="nofollow"><img src="https://camo.githubusercontent.com/fee63f7e9e223aac7701585b3212852bee17af56b1fa068806528842cef2fe2a/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f6b757931374c564445536b2f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/kuy17LVDESk/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=kuy17LVDESk" rel="nofollow">How Many AI Agents can JavaScript Handle?</a></td>
+</tr>
+</tbody>
+</table>
+<h3>E. MinecraftClone</h3>
+<p><strong>Demo</strong>: <a href="./MinecraftClone">index.html</a><br>
+<strong>Source Code</strong>: <a href="https://github.com/simondevyoutube/MinecraftClone">Github</a></p>
+<table role="table">
+<thead>
+<tr>
+<th align="left">Nr</th>
+<th align="left">Preview</th>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=gRGtk8oF9hI" rel="nofollow"><img src="https://camo.githubusercontent.com/e025a4fad363375c073bc4d21ee340622dc6c9460a3e66ba56ce4f18506006da/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f675247746b386f463968492f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/gRGtk8oF9hI/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=gRGtk8oF9hI" rel="nofollow">Coding Minecraft in JavaScript</a></td>
+</tr>
+</tbody>
+</table>
+<h3>F. Quick_3D_MMORPG</h3>
+<p><strong>Demo</strong>: <a href="./Quick_3D_MMORPG">index.html</a><br>
+<strong>Source Code</strong>: <a href="https://github.com/simondevyoutube/Quick_3D_MMORPG">Github</a></p>
+<table role="table">
+<thead>
+<tr>
+<th align="left">Nr</th>
+<th align="left">Preview</th>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=IptkgFOoci0" rel="nofollow"><img src="https://camo.githubusercontent.com/32c40dba43c4f7fe67396d2b8729eaac62c622384e0d6fc7bdeb242444e1d076/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f4970746b67464f6f6369302f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/IptkgFOoci0/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=IptkgFOoci0" rel="nofollow">I Tried Making a 3D MMORPG Game in JavaScript</a></td>
+</tr>
+</tbody>
+</table>
+<h3>G. Quick_3D_RPG</h3>
+<p><strong>Demo</strong>: <a href="./Quick_3D_RPG">index.html</a><br>
+<strong>Source Code</strong>: <a href="https://github.com/simondevyoutube/Quick_3D_RPG">Github</a></p>
+<table role="table">
+<thead>
+<tr>
+<th align="left">Nr</th>
+<th align="left">Preview</th>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=SBfZAVzbhCg" rel="nofollow"><img src="https://camo.githubusercontent.com/3a96ed78c751c3967677731e1238486261e5a806899569030f5fe297e0fde531/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f5342665a41567a626843672f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/SBfZAVzbhCg/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=SBfZAVzbhCg" rel="nofollow">I Tried Making a 3D RPG Game in JavaScript</a></td>
+</tr>
+</tbody>
+</table>
+<h3>H. Quick_Game1</h3>
+<p><strong>Demo</strong>: <a href="./Quick_Game1">index.html</a><br>
+<strong>Source Code</strong>: <a href="https://github.com/simondevyoutube/Quick_Game1">Github</a></p>
+<table role="table">
+<thead>
+<tr>
+<th align="left">Nr</th>
+<th align="left">Preview</th>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=0M8cxx0FQlY" rel="nofollow"><img src="https://camo.githubusercontent.com/6ee3452cac285bb1fdccde183443420194fd57c1f82476462c4ae8bd8f2a2e66/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f304d386378783046516c592f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/0M8cxx0FQlY/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=0M8cxx0FQlY" rel="nofollow">I Tried Making a 3D Game in JavaScript</a></td>
+</tr>
+</tbody>
+</table>
+<h3>I. Quick_MinecraftClone2</h3>
+<p><strong>Demo</strong>: <a href="./Quick_MinecraftClone2">index.html</a><br>
+<strong>Source Code</strong>: <a href="https://github.com/simondevyoutube/Quick_MinecraftClone2">Github</a></p>
+<table role="table">
+<thead>
+<tr>
+<th align="left">Nr</th>
+<th align="left">Preview</th>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=MQt0exToUEY" rel="nofollow"><img src="https://camo.githubusercontent.com/51bdb8951d4ea0d10d9ac627a1b03e6b2b5acace204c54f9ef29efe7b774cf6c/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f4d5174306578546f5545592f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/MQt0exToUEY/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=MQt0exToUEY" rel="nofollow">I made an EVEN BETTER Minecraft</a></td>
+</tr>
+</tbody>
+</table>
+<h3>J. RockPaperScissorsLizardSpock</h3>
+<p><strong>Demo</strong>: <a href="./RockPaperScissorsLizardSpock">index.html</a><br>
+<strong>Source Code</strong>: <a href="https://github.com/simondevyoutube/RockPaperScissorsLizardSpock">Github</a></p>
+<table role="table">
+<thead>
+<tr>
+<th align="left">Nr</th>
+<th align="left">Preview</th>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=AR2BOp_mfRU" rel="nofollow"><img src="https://camo.githubusercontent.com/679ae72288fab963a7cc6cb5e3ed9607cc7286196e4220bd976b185614f7c743/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f415232424f705f6d6652552f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/AR2BOp_mfRU/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=AR2BOp_mfRU" rel="nofollow">How to Code Rock Paper Scissors (JavaScript)</a></td>
+</tr>
+</tbody>
+</table>
+<h3>K. ThreeJS_Tutorial_3DSound</h3>
+<p><strong>Demo</strong>: <a href="./ThreeJS_Tutorial_3DSound">index.html</a><br>
+<strong>Source Code</strong>: <a href="https://github.com/simondevyoutube/ThreeJS_Tutorial_3DSound">Github</a></p>
+<table role="table">
+<thead>
+<tr>
+<th align="left">Nr</th>
+<th align="left">Preview</th>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=1S7ke6F8sV4" rel="nofollow"><img src="https://camo.githubusercontent.com/0bfafd60264d6f7c2f9ddfb1873720e3c5d713c74fc62ed385d824d1a9e6d620/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f3153376b653646387356342f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/1S7ke6F8sV4/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=1S7ke6F8sV4" rel="nofollow">Immersive 3D Audio and Visualization (three.js &amp; javascript)</a></td>
+</tr>
+</tbody>
+</table>
+<h3>L. ThreeJS_Tutorial_FirstPersonCamera</h3>
+<p><strong>Demo</strong>: <a href="./ThreeJS_Tutorial_FirstPersonCamera">index.html</a><br>
+<strong>Source Code</strong>: <a href="https://github.com/simondevyoutube/ThreeJS_Tutorial_FirstPersonCamera">Github</a></p>
+<table role="table">
+<thead>
+<tr>
+<th align="left">Nr</th>
+<th align="left">Preview</th>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=oqKzxPMLWxo" rel="nofollow"><img src="https://camo.githubusercontent.com/7ca6440c018c7e7592d1d8038943b085a7f5af60455e132b4d9709e158c519c3/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f6f714b7a78504d4c57786f2f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/oqKzxPMLWxo/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=oqKzxPMLWxo" rel="nofollow">Building a Simple First Person Camera</a></td>
+</tr>
+</tbody>
+</table>
+<h3>M. TicTacToe_WithMinimax</h3>
+<p><strong>Demo</strong>: <a href="./TicTacToe_WithMinimax">index.html</a><br>
+<strong>Source Code</strong>: <a href="https://github.com/simondevyoutube/TicTacToe_WithMinimax">Github</a></p>
+<table role="table">
+<thead>
+<tr>
+<th align="left">Nr</th>
+<th align="left">Preview</th>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=4KyYjERkmPg" rel="nofollow"><img src="https://camo.githubusercontent.com/42785c72747d30224f70a65801ed65dea2fec5d51a8d4fd5fc1c218e9b47545f/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f344b79596a45526b6d50672f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/4KyYjERkmPg/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=4KyYjERkmPg" rel="nofollow">Tic Tac Toe with Minimax Algorithm</a></td>
+</tr>
+</tbody>
+</table>
+<h3>N. Tutorial_ChromeDinosaurGame3D</h3>
+<p><strong>Demo</strong>: <a href="./Tutorial_ChromeDinosaurGame3D">index.html</a><br>
+<strong>Source Code</strong>: <a href="https://github.com/simondevyoutube/Tutorial_ChromeDinosaurGame3D">Github</a></p>
+<table role="table">
+<thead>
+<tr>
+<th align="left">Nr</th>
+<th align="left">Preview</th>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=KJ38qCwFdy8" rel="nofollow"><img src="https://camo.githubusercontent.com/95090a29a0c6bf0ffe2c0558d3ec3ec969b38de55905784966b9f79b483a6ec5/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f4b4a3338714377466479382f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/KJ38qCwFdy8/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=KJ38qCwFdy8" rel="nofollow">Needlessly 3D Chrome Dinosaur Game (JavaScript/Three.js)</a></td>
+</tr>
+</tbody>
+</table>
+<h3>O. WebGL_1Day_3DEngine</h3>
+<p><strong>Demo</strong>: <a href="./WebGL_1Day_3DEngine">index.html</a><br>
+<strong>Source Code</strong>: <a href="https://github.com/simondevyoutube/WebGL_1Day_3DEngine">Github</a></p>
+<table role="table">
+<thead>
+<tr>
+<th align="left">Nr</th>
+<th align="left">Preview</th>
+<th align="left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left"><a href="https://www.youtube.com/watch?v=Ms1vvo45Wi8" rel="nofollow"><img src="https://camo.githubusercontent.com/7583abf4f53031dd423cf4e145b5e36732710cb9ad022c1964c102687278e46b/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f4d733176766f34355769382f64656661756c742e6a7067" data-canonical-src="https://img.youtube.com/vi/Ms1vvo45Wi8/default.jpg" style="max-width: 100%;"></a></td>
+<td align="left"><a href="https://www.youtube.com/watch?v=Ms1vvo45Wi8" rel="nofollow">I Made a 3D Engine in 1 Day (WebGL/JavaScript)</a></td>
+</tr>
+</tbody>
+</table>
+</details>
+<p>Demos by SimonDev (<a href="https://github.com/simondevyoutube/">Github</a>/<a href="https://www.youtube.com/channel/UCEwhtpXrg5MmwlH04ANpL8A/videos" rel="nofollow">Youtube</a>)</p>
+<p>3D Ressources:</p>
+<ul>
+<li><a href="https://www.mixamo.com/#/" rel="nofollow">Mixamo</a></li>
+<li><a href="https://quaternius.com/packs/texturedfantasynature.html" rel="nofollow">Quaternius</a></li>
+<li><a href="https://opengameart.org/art-search-advanced?keys=&amp;field_art_type_tid%5B%5D=10&amp;sort_by=count&amp;sort_order=DESC" rel="nofollow">OpenGameArt</a></li>
+<li><a href="https://poly.pizza" rel="nofollow">Poly.Art</a></li>
+<li><a href="https://zsky2000.itch.io/50-models-of-environment" rel="nofollow">Zsky</a></li>
+<li><a href="https://www.reddit.com/r/gamedev/search/?q=free%20models&amp;restrict_sr=1&amp;sr_nsfw=" rel="nofollow">Reddit GameDev</a></li>
+<li><a href="https://game-icons.net" rel="nofollow">GameIcons</a></li>
+<li><a href="https://niklever.github.io/threejs-games-course/" rel="nofollow">Threejs Course</a></li>
+</ul>
+<p>Generative 2D/3D:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=R3C2giDfmO8" rel="nofollow">Snowflake</a></li>
+<li><a href="http://dmccooey.com/polyhedra/index.html" rel="nofollow">Polyhedra</a></li>
+<li><a href="https://editor.p5js.org/carlos.henrique2324@gmail.com/sketches/HJF28pVME" rel="nofollow">Supershapes</a></li>
+<li><a href="https://threejs.org/examples/#misc_uv_tests" rel="nofollow">Plane Geometry</a></li>
+<li><a href="http://andrewmarsh.com/software/" rel="nofollow">Andrew Marsh</a></li>
+<li><a href="https://github.com/supereggbert/proctree.js/">Generative Trees</a></li>
+<li><a href="http://levskaya.github.io/polyhedronisme/" rel="nofollow">PolyHedronisme</a></li>
+</ul>
+</div>
+</body>
+</html>
